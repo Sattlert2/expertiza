@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a093949-55cc-470b-bf24-73499b447feb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/questionnaires_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questionnaires_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,37 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="All specs in spec: expertiza" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <module name="expertiza" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -47,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584559928930</updated>
       <workItem from="1584559930327" duration="1377000" />
-      <workItem from="1584714760125" duration="4279000" />
+      <workItem from="1584714760125" duration="6724000" />
+      <workItem from="1584723065626" duration="1998000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit: RUBERIC: hardwired variables resolved. Constants made for save_questions">
       <created>1584719453781</created>
@@ -56,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584719453781</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit: RUBERIC: hardwired variables resolved. Constants made for save_questions">
+      <created>1584720112158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584720112158</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,10 +111,14 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="199" key="#Deployment/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584559992645" />
-    <state x="240" y="86" key="CommitChangelistDialog2" timestamp="1584719429456">
+    <state x="383" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584724708988">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="240" y="86" key="CommitChangelistDialog2/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584719429456" />
+    <state x="383" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584724708988" />
+    <state x="240" y="86" key="CommitChangelistDialog2" timestamp="1584720111192">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="240" y="86" key="CommitChangelistDialog2/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584720111192" />
     <state x="709" y="296" key="FileChooserDialogImpl" timestamp="1584560063808">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
