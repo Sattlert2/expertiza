@@ -229,21 +229,17 @@ class QuestionnairesController < ApplicationController
 
   # save questions that have been added to a questionnaire
   def save_new_questions(questionnaire_id)
-    if params[:new_question]
-      # The new_question array contains all the new questions
-      # that should be saved to the database
-      params[:new_question].each_key do |question_key|
-        q = Question.new
-        q.txt = params[:new_question][question_key]
-        q.questionnaire_id = questionnaire_id
-        q.type = params[:question_type][question_key][:type]
-        q.seq = question_key.to_i
-#        if @questionnaire.type == "QuizQuestionnaire"
-#          q.weight = 1 # setting the weight to 1 for quiz questionnaire since the model validates this field
-#        end
-        q.weight = WEIGHT
-        q.save unless q.txt.strip.empty?
-      end
+    return unless params[:new_question]
+    # The new_question array contains all the new questions
+    # that should be saved to the database
+    params[:new_question].each_key do |question_key|
+      q = Question.new
+      q.txt = params[:new_question][question_key]
+      q.questionnaire_id = questionnaire_id
+      q.type = params[:question_type][question_key][:type]
+      q.seq = question_key.to_i
+      q.weight = WEIGHT
+      q.save unless q.txt.strip.empty?
     end
   end
 
@@ -275,16 +271,15 @@ class QuestionnairesController < ApplicationController
     delete_questions questionnaire_id
     save_new_questions questionnaire_id
 
-    if params[:question]
-      params[:question].each_key do |question_key|
-        if params[:question][question_key][:txt].strip.empty?
-          # question text is empty, delete the question
-          Question.delete(question_key)
-        else
-          # Update existing question.
-          question = Question.find(question_key)
-          Rails.logger.info(question.errors.messages.inspect) unless question.update_attributes(params[:question][question_key])
-        end
+    return unless params[:question]
+    params[:question].each_key do |question_key|
+      if params[:question][question_key][:txt].strip.empty?
+        # question text is empty, delete the question
+        Question.delete(question_key)
+      else
+        # Update existing question.
+        question = Question.find(question_key)
+        Rails.logger.info(question.errors.messages.inspect) unless question.update_attributes(params[:question][question_key])
       end
     end
   end
