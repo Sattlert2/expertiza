@@ -80,7 +80,7 @@
       <updated>1584559928930</updated>
       <workItem from="1584559930327" duration="1377000" />
       <workItem from="1584714760125" duration="6724000" />
-      <workItem from="1584723065626" duration="1998000" />
+      <workItem from="1584723065626" duration="8050000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit: RUBERIC: hardwired variables resolved. Constants made for save_questions">
       <created>1584719453781</created>
@@ -107,10 +107,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit: RUBERIC: hardwired variables resolved. Constants made for save_questions" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="199" key="#Deployment" timestamp="1584559992645">
+    <state x="521" y="199" key="#Deployment" timestamp="1584725782188">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="199" key="#Deployment/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584559992645" />
+    <state x="521" y="199" key="#Deployment/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584725782188" />
     <state x="383" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584724708988">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -119,6 +119,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="240" y="86" key="CommitChangelistDialog2/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584720111192" />
+    <state x="92" y="92" width="1674" height="896" key="DirDiffDialog" timestamp="1584728675090">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="92" y="92" width="1674" height="896" key="DirDiffDialog/-1600.0.1538.900/0.0.1858.1080@0.0.1858.1080" timestamp="1584728675090" />
     <state x="709" y="296" key="FileChooserDialogImpl" timestamp="1584560063808">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
