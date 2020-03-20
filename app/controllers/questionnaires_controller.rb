@@ -170,8 +170,9 @@ class QuestionnairesController < ApplicationController
     questionnaire_id = params[:id] unless params[:id].nil?
     num_of_existed_questions = Questionnaire.find(questionnaire_id).questions.size
     ((num_of_existed_questions + 1)..(num_of_existed_questions + params[:question][:total_num].to_i)).each do |i|
-      question = Object.const_get(params[:question][:type]).create(txt: '', questionnaire_id: questionnaire_id,
-                                                                   seq: i, type: params[:question][:type], break_before: true)
+      question_type = params[:question][:type] unless params[:question][:type].nil?
+      question = Object.const_get(question_type).create(txt: '', questionnaire_id: questionnaire_id,
+                                                                   seq: i, type: question_type, break_before: true)
       if question.is_a? ScoredQuestion
         question.weight = WEIGHT
         question.max_label = LABEL_AGREE
