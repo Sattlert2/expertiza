@@ -75,7 +75,7 @@ class QuestionnairesController < ApplicationController
         flash[:error] = $ERROR_INFO
       end
       begin
-        create_questions questionnaire_private, display_type
+        create_questionnaire questionnaire_private, display_type
         flash[:success] = 'You have successfully created a questionnaire!'
       rescue StandardError
         flash[:error] = $ERROR_INFO
@@ -164,8 +164,7 @@ class QuestionnairesController < ApplicationController
     redirect_to controller: 'tree_display', action: 'list'
   end
 
-  # Zhewei: This method is used to add new questions when editing questionnaire.
-
+  # This method is used to add new questions when editing questionnaire.
   def add_new_questions
     questionnaire_id = params[:id] unless params[:id].nil?
     num_of_existed_questions = Questionnaire.find(questionnaire_id).questions.size
@@ -191,7 +190,7 @@ class QuestionnairesController < ApplicationController
     redirect_to edit_questionnaire_path(questionnaire_id.to_sym)
   end
 
-  # Zhewei: This method is used to save all questions in current questionnaire.
+  # This method is used to save all questions in current questionnaire.
   def save_all_questions
     questionnaire_id = params[:id]
     begin
@@ -285,15 +284,16 @@ class QuestionnairesController < ApplicationController
     end
   end
 
-  def create_questions questionnaire_private, display_type
+  # Create questionnaire and creates node
+  def create_questionnaire questionnaire_private, display_type
     @questionnaire.private = questionnaire_private
     @questionnaire.name = params[:questionnaire][:name]
     @questionnaire.instructor_id = session[:user].id
     @questionnaire.min_question_score = params[:questionnaire][:min_question_score]
     @questionnaire.max_question_score = params[:questionnaire][:max_question_score]
     @questionnaire.type = params[:questionnaire][:type]
-    # Zhewei: Right now, the display_type in 'questionnaires' table and name in 'tree_folders' table are not consistent.
-    # In the future, we need to write migration files to make them consistency.
+    # Right now, the display_type in 'questionnaires' table and name in 'tree_folders' table are not consistent.
+    # In the future, we need to write migration files to make them consistent.
     # E1903 : We are not sure of other type of cases, so have added a if statement. If there are only 5 cases, remove the if statement
     if %w[AuthorFeedback CourseSurvey TeammateReview GlobalSurvey AssignmentSurvey].include?(display_type)
       display_type = (display_type.split /(?=[A-Z])/).join("%")
@@ -317,5 +317,4 @@ class QuestionnairesController < ApplicationController
                                      :alternatives, :break_before, :max_label, :min_label)
   end
 
-  # FIXME: These private methods belong in the Questionnaire model
 end
