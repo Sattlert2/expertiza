@@ -1,3 +1,9 @@
+User Changes
+=========
+Refactored in beta_t2 branch.
+Changes documented [here](https://expertiza.csc.ncsu.edu/index.php/CSC/ECE_517_Spring_2020_/_E2001_Refactor_Questionnaires_Controller)
+
+
 Expertiza
 =========
 
