@@ -3,6 +3,9 @@ User Changes
 Refactored beta branch in beta_t2 branch. Increased testing coverage by 17%.
 Changes documented [here](https://expertiza.csc.ncsu.edu/index.php/CSC/ECE_517_Spring_2020_/_E2001_Refactor_Questionnaires_Controller).
 
+Worked on https://github.com/jamcdon3/expertiza. Changes made in branch E2023_2. Implemented functionality to track time a user spends on provided links in an assignment review.
+Changes documented [here](https://expertiza.csc.ncsu.edu/index.php/CSC/ECE_517_Spring_2020_/_E2023_Track_the_Time_Students_Look_at_Other_Submissions).
+
 
 Expertiza
 =========
